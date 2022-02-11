@@ -20,8 +20,6 @@ body {
   letter-spacing: 0.03em;
 }
 .list {
-  /*padding: 0;
-  margin: 0;*/
   list-style: none;
 }
 h1,
@@ -161,6 +159,7 @@ ul {
 /*======= OUR JOB START =======*/
 
 .job-title {
+  margin-top: 94px;
   outline: 2px solid tomato;
   font-style: normal;
   font-weight: 700;
@@ -170,6 +169,7 @@ ul {
 
   color: var(--title-text-color);
 }
+
 /*======= OUR JOB END =======*/
 /*======= OUR TEAM START======= */
 .team-list {
