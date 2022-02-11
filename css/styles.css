@@ -20,7 +20,20 @@ body {
   letter-spacing: 0.03em;
 }
 .list {
+  /*padding: 0;
+  margin: 0;*/
   list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
 }
 /*=======TOP LINE START=======*/
 .logo-top {
@@ -84,6 +97,8 @@ body {
 
 /*======= HERO CTART =======*/
 .hero {
+  outline: 2px solid tomato;
+  text-align: center;
   background-color: var(--section-bg-dark);
 }
 .hero-title {
@@ -91,34 +106,41 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 .button-hero {
+  min-width: 200px;
+  min-height: 50px;
+  margin-top: 30px;
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
+  /*display: flex;*/
   align-items: center;
   text-align: center;
+  border-radius: 4px;
   letter-spacing: 0.06em;
 
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--button-text-color);
 }
 
 .button-hero:hover,
 .button-hero:focus {
   background-color: var(--button-hover-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /*======= HERO END=======*/
 
 /*======= OUR FEATURE =======*/
-
 .feature-title {
+  margin-top: 94px;
+  margin-bottom: 0;
+  outline: 2px solid tomato;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -128,13 +150,18 @@ body {
   color: var(--title-text-color);
 }
 .description {
+  outline: 2px solid tomato;
+  margin-top: 10px;
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 1.71;
 }
 /*======= OUR FEATURE END=======*/
 
 /*======= OUR JOB START =======*/
+
 .job-title {
+  outline: 2px solid tomato;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -146,6 +173,7 @@ body {
 /*======= OUR JOB END =======*/
 /*======= OUR TEAM START======= */
 .team-list {
+  outline: 2px solid tomato;
   background-color: var(--secondary-bg-color);
 }
 
@@ -179,6 +207,7 @@ body {
 
 /*======= FOOTER START======= */
 .basement {
+  outline: 2px solid tomato;
   background-color: var(--section-bg-dark);
 }
 .basement-logo {
@@ -235,6 +264,7 @@ body {
 /*======= PORTFOLIO =======  */
 /*======= FILTERS ======= */
 button {
+  outline: 2px solid tomato;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -252,6 +282,12 @@ button {
 }
 /*======= FILTERS END ======= */
 /*======= PROJECT ======= */
+.filters {
+  outline: 2px solid tomato;
+}
+.project {
+  outline: 2px solid tomato;
+}
 .card-project-title {
   font-weight: 700;
   font-size: 18px;
