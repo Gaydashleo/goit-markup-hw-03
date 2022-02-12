@@ -38,7 +38,8 @@ ol {
   margin-bottom: 0;
   padding-left: 0;
 }
-img {
+img,
+p {
   display: block;
 }
 .container {
@@ -130,7 +131,6 @@ img {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 280px;
-  margin-bottom: 94px;
   background-color: var(--section-bg-dark);
 }
 .hero-title {
@@ -167,9 +167,15 @@ img {
 /*======= HERO END=======*/
 
 /*======= OUR FEATURE =======*/
+.feature-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .feature {
   display: flex;
+  justify-content: space-between;
 }
+
 .feature-title {
   margin-bottom: 10px;
   outline: 2px solid tomato;
@@ -182,7 +188,6 @@ img {
   color: var(--title-text-color);
 }
 .description {
-  position: absolute;
   outline: 2px solid tomato;
   font-size: 14px;
   line-height: 1.71;
