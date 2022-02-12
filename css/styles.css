@@ -38,9 +38,18 @@ ol {
   margin-bottom: 0;
   padding-left: 0;
 }
-img,
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 p {
   display: block;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .container {
@@ -146,12 +155,15 @@ p {
 .button-hero {
   min-width: 200px;
   margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 10px 32px;
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   text-align: center;
+
   border-radius: 4px;
   letter-spacing: 0.06em;
 
@@ -170,6 +182,7 @@ p {
 /*======= OUR FEATURE =======*/
 .section {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 .feature-section {
   padding-top: 94px;
@@ -181,7 +194,6 @@ p {
 }
 
 .feature-title {
-  outline: 2px solid tomato;
   margin-bottom: 10px;
   width: 270px;
   font-style: normal;
@@ -193,7 +205,6 @@ p {
   color: var(--title-text-color);
 }
 .description {
-  outline: 2px solid tomato;
   width: 270px;
   font-size: 14px;
   line-height: 1.71;
@@ -208,10 +219,8 @@ p {
 .job {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 94px;
 }
 .job-title {
-  outline: 2px solid tomato;
   margin-bottom: 50px;
   font-style: normal;
   font-weight: 700;
@@ -225,12 +234,11 @@ p {
 /*======= OUR JOB END =======*/
 /*======= OUR TEAM START======= */
 .team-list {
-  outline: 2px solid tomato;
   background-color: var(--secondary-bg-color);
 }
 
 .team-title {
-  padding-top: 94px;
+  margin-bottom: 50px;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -242,7 +250,6 @@ p {
 .team {
   display: flex;
   justify-content: space-between;
-  /*margin-right: 30px;*/
 }
 
 .card-team-title {
@@ -264,14 +271,19 @@ p {
 
   color: var(--primary-text-color);
 }
+
 /*======= OUR TEAM END======= */
 
 /*======= FOOTER START======= */
 .basement {
-  outline: 2px solid tomato;
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--section-bg-dark);
 }
 .basement-logo {
+  min-width: 145px;
+
   font-family: Raleway;
   font-weight: b700;
   font-size: 26px;
@@ -324,8 +336,22 @@ p {
 
 /*======= PORTFOLIO =======  */
 /*======= FILTERS ======= */
+.filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-all:active {
+  background-color: var(--accent-color);
+  color: var(--button-text-color);
+}
+.btn-list {
+  margin-right: 8px;
+  margin-bottom: 50px;
+}
 button {
-  outline: 2px solid tomato;
+  display: block;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -336,20 +362,27 @@ button {
 
   background-color: var(--portfolio-button-bg-color);
   color: var(--title-text-color);
+  border-radius: 4px;
 }
-.button-all:active {
-  background-color: var(--accent-color);
-  color: var(--button-text-color);
-}
+
 /*======= FILTERS END ======= */
 /*======= PROJECT ======= */
-.filters {
-  outline: 2px solid tomato;
-}
 .project {
-  outline: 2px solid tomato;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.card-img-project {
+  flex-basis: calc((100%-120) / 4);
+  margin-top: 30px;
+  margin-left: 30px;
 }
 .card-project-title {
+  margin-top: 20px;
+  margin-bottom: 4px;
+  margin-left: 24px;
+  margin-right: 24px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -358,12 +391,16 @@ button {
   color: var(--title-text-color);
 }
 .under-card-project-title {
+  margin-bottom: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
 
-  line-height: 1.88;
-
   color: var(--primary-text-color);
+}
+.card-body {
+  border-bottom: 1px solid #eeeeee;
 }
 /*======= PROJECT END ======= */
