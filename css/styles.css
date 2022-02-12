@@ -99,8 +99,6 @@ img {
 
   color: var(--title-text-color);
 }
-.top-line-contacts {
-}
 
 .mail-top {
   margin-left: auto;
@@ -127,7 +125,7 @@ img {
 }
 /*======= TOP LINE END=======*/
 
-/*======= HERO CTART =======*/
+/*======= HERO START =======*/
 .hero {
   text-align: center;
   padding-top: 200px;
@@ -169,9 +167,11 @@ img {
 /*======= HERO END=======*/
 
 /*======= OUR FEATURE =======*/
+.feature {
+  display: flex;
+}
 .feature-title {
-  margin-top: 94px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   outline: 2px solid tomato;
   font-style: normal;
   font-weight: 700;
@@ -182,12 +182,12 @@ img {
   color: var(--title-text-color);
 }
 .description {
+  position: absolute;
   outline: 2px solid tomato;
-  margin-top: 10px;
-  margin-bottom: 0;
   font-size: 14px;
   line-height: 1.71;
 }
+
 /*======= OUR FEATURE END=======*/
 
 /*======= OUR JOB START =======*/
