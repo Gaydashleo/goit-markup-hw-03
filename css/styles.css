@@ -42,6 +42,7 @@ img,
 p {
   display: block;
 }
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -167,6 +168,9 @@ p {
 /*======= HERO END=======*/
 
 /*======= OUR FEATURE =======*/
+.section {
+  padding-top: 94px;
+}
 .feature-section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -177,8 +181,9 @@ p {
 }
 
 .feature-title {
-  margin-bottom: 10px;
   outline: 2px solid tomato;
+  margin-bottom: 10px;
+  width: 270px;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -189,17 +194,25 @@ p {
 }
 .description {
   outline: 2px solid tomato;
+  width: 270px;
   font-size: 14px;
   line-height: 1.71;
+}
+.description:not(:last-child) {
+  margin-right: 30px;
 }
 
 /*======= OUR FEATURE END=======*/
 
 /*======= OUR JOB START =======*/
-
+.job {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 94px;
+}
 .job-title {
-  margin-top: 94px;
   outline: 2px solid tomato;
+  margin-bottom: 50px;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -217,6 +230,7 @@ p {
 }
 
 .team-title {
+  padding-top: 94px;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -225,8 +239,15 @@ p {
 
   color: var(--title-text-color);
 }
+.team {
+  display: flex;
+  justify-content: space-between;
+  /*margin-right: 30px;*/
+}
 
 .card-team-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -236,6 +257,7 @@ p {
 }
 
 .under-card-team-title {
+  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
