@@ -12,6 +12,8 @@
   --footer-logo-color: #ffffff;
   --button-hover-color: #188ce8;
   --portfolio-button-bg-color: #f5f4fa;
+  --portfolio-project-border-color: #eeeeee;
+  --portfolio-topline-border-color: #ececec;
 }
 body {
   background-color: var(#ffffff);
@@ -47,15 +49,11 @@ img {
 p {
   display: block;
 }
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 .container {
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 /*=======TOP LINE START=======*/
 .top-line {
@@ -180,20 +178,18 @@ p {
 /*======= HERO END=======*/
 
 /*======= OUR FEATURE =======*/
+
 .section {
   padding-top: 94px;
-  padding-bottom: 94px;
-}
-.feature-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .feature {
   display: flex;
-  justify-content: space-between;
+  margin-left: -30px;
+  margin-top: -30px;
 }
-
 .feature-title {
+  margin-top: 30px;
+  margin-left: 30px;
   margin-bottom: 10px;
   width: 270px;
   font-style: normal;
@@ -205,6 +201,8 @@ p {
   color: var(--title-text-color);
 }
 .description {
+  margin-top: 30px;
+  margin-left: 30px;
   width: 270px;
   font-size: 14px;
   line-height: 1.71;
@@ -218,8 +216,14 @@ p {
 /*======= OUR JOB START =======*/
 .job {
   display: flex;
-  justify-content: space-between;
+  margin-left: -30px;
+  margin-top: -30px;
 }
+.job-item {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
 .job-title {
   margin-bottom: 50px;
   font-style: normal;
@@ -253,7 +257,6 @@ p {
 }
 
 .card-team-title {
-  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -264,14 +267,16 @@ p {
 }
 
 .under-card-team-title {
-  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 
   color: var(--primary-text-color);
 }
-
+.card-team {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 /*======= OUR TEAM END======= */
 
 /*======= FOOTER START======= */
@@ -283,7 +288,6 @@ p {
 }
 .basement-logo {
   min-width: 145px;
-
   font-family: Raleway;
   font-weight: b700;
   font-size: 26px;
@@ -293,6 +297,7 @@ p {
   color: var(--footer-logo-color);
 }
 .basement-address {
+  margin-top: 20px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
@@ -302,6 +307,7 @@ p {
   color: var(--footer-address-color);
 }
 .mail-basement {
+  padding-top: 9px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
@@ -317,6 +323,7 @@ p {
   color: var(--accent-color);
 }
 .tel-basement {
+  padding-top: 9px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
@@ -335,6 +342,9 @@ p {
 /*======= FOOTER END ======= */
 
 /*======= PORTFOLIO =======  */
+.top-line-border {
+  border-bottom: 1px solid var(--portfolio-topline-border-color);
+}
 /*======= FILTERS ======= */
 .filters {
   display: flex;
@@ -351,6 +361,7 @@ p {
   margin-bottom: 50px;
 }
 button {
+  padding: 6px 22px;
   display: block;
   font-family: Roboto;
   font-style: normal;
@@ -377,6 +388,9 @@ button {
   flex-basis: calc((100%-120) / 4);
   margin-top: 30px;
   margin-left: 30px;
+  border-bottom: 1px solid var(--portfolio-project-border-color);
+  border-left: 1px solid var(--portfolio-project-border-color);
+  border-right: 1px solid var(--portfolio-project-border-color);
 }
 .card-project-title {
   margin-top: 20px;
@@ -400,7 +414,5 @@ button {
 
   color: var(--primary-text-color);
 }
-.card-body {
-  border-bottom: 1px solid #eeeeee;
-}
+
 /*======= PROJECT END ======= */
