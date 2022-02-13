@@ -201,6 +201,7 @@ p {
   color: var(--title-text-color);
 }
 .description {
+  flex-basis: calc((100%-120) / 4);
   margin-top: 30px;
   margin-left: 30px;
   width: 270px;
@@ -222,6 +223,7 @@ p {
 .job-item {
   margin-left: 30px;
   margin-top: 30px;
+  flex-basis: calc((100%-90) / 3);
 }
 
 .job-title {
@@ -253,9 +255,14 @@ p {
 }
 .team {
   display: flex;
-  justify-content: space-between;
+  margin-top: -30px;
+  margin-left: -30px;
 }
-
+.team-img {
+  flex-basis: calc((100%-120) / 4);
+  margin-top: 30px;
+  margin-left: 30px;
+}
 .card-team-title {
   margin-bottom: 10px;
   font-weight: 500;
