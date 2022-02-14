@@ -54,11 +54,13 @@ p {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 /*=======TOP LINE START=======*/
 .top-line {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .top-line-container {
   display: flex;
@@ -138,7 +140,7 @@ p {
 .hero {
   text-align: center;
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
   background-color: var(--section-bg-dark);
 }
 .hero-title {
@@ -187,9 +189,12 @@ p {
   margin-left: -30px;
   margin-top: -30px;
 }
-.feature-title {
+.feature-item {
+  flex-basis: calc((100% - 120px) / 4);
   margin-top: 30px;
   margin-left: 30px;
+}
+.feature-title {
   margin-bottom: 10px;
   width: 270px;
   font-style: normal;
@@ -201,9 +206,6 @@ p {
   color: var(--title-text-color);
 }
 .description {
-  flex-basis: calc((100%-120) / 4);
-  margin-top: 30px;
-  margin-left: 30px;
   width: 270px;
   font-size: 14px;
   line-height: 1.71;
@@ -219,11 +221,12 @@ p {
   display: flex;
   margin-left: -30px;
   margin-top: -30px;
+  padding-bottom: 94px;
 }
 .job-item {
   margin-left: 30px;
   margin-top: 30px;
-  flex-basis: calc((100%-90) / 3);
+  flex-basis: calc((100% - 90px) / 3);
 }
 
 .job-title {
@@ -257,9 +260,10 @@ p {
   display: flex;
   margin-top: -30px;
   margin-left: -30px;
+  padding-bottom: 94px;
 }
 .team-img {
-  flex-basis: calc((100%-120) / 4);
+  flex-basis: calc((100% - 120px) / 4);
   margin-top: 30px;
   margin-left: 30px;
 }
@@ -314,7 +318,7 @@ p {
   color: var(--footer-address-color);
 }
 .mail-basement {
-  padding-top: 9px;
+  margin-top: 9px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
@@ -330,7 +334,7 @@ p {
   color: var(--accent-color);
 }
 .tel-basement {
-  padding-top: 9px;
+  margin-top: 9px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
@@ -349,7 +353,7 @@ p {
 /*======= FOOTER END ======= */
 
 /*======= PORTFOLIO =======  */
-.top-line-border {
+.top-line {
   border-bottom: 1px solid var(--portfolio-topline-border-color);
 }
 /*======= FILTERS ======= */
@@ -392,7 +396,7 @@ button {
   margin-top: -30px;
 }
 .card-img-project {
-  flex-basis: calc((100%-120) / 4);
+  flex-basis: calc((100% - 90px) / 3);
   margin-top: 30px;
   margin-left: 30px;
   border-bottom: 1px solid var(--portfolio-project-border-color);
