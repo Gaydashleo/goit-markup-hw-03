@@ -218,10 +218,12 @@ p {
 
 /*======= OUR JOB START =======*/
 .job {
+  padding-bottom: 94px;
+}
+.job-img {
   display: flex;
   margin-left: -30px;
   margin-top: -30px;
-  padding-bottom: 94px;
 }
 .job-item {
   margin-left: 30px;
@@ -244,6 +246,7 @@ p {
 /*======= OUR TEAM START======= */
 .team-list {
   background-color: var(--secondary-bg-color);
+  padding-bottom: 94px;
 }
 
 .team-title {
@@ -260,7 +263,6 @@ p {
   display: flex;
   margin-top: -30px;
   margin-left: -30px;
-  padding-bottom: 94px;
 }
 .team-img {
   flex-basis: calc((100% - 120px) / 4);
@@ -408,10 +410,7 @@ button {
   border-right: 1px solid var(--portfolio-project-border-color);
 }
 .card-project-title {
-  margin-top: 20px;
   margin-bottom: 4px;
-  margin-left: 24px;
-  margin-right: 24px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -419,10 +418,13 @@ button {
 
   color: var(--title-text-color);
 }
+.card-body {
+  padding: 20px 24px;
+}
 .under-card-project-title {
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;
   margin-left: 24px;
-  margin-right: 24px;
+  margin-right: 24px;*/
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
