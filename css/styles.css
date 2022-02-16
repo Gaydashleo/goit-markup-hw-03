@@ -320,6 +320,7 @@ p {
   color: var(--footer-address-color);
 }
 .mail-basement {
+  display: block;
   margin-top: 9px;
   font-family: Roboto;
   font-style: normal;
@@ -336,6 +337,7 @@ p {
   color: var(--accent-color);
 }
 .tel-basement {
+  display: block;
   margin-top: 9px;
   font-family: Roboto;
   font-style: normal;
